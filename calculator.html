@@ -1,0 +1,48 @@
+<!doctype html>
+<head>
+    <meta charset="UTF-8">
+    <title>A JavaScript & AutoGrid Calculator</title>
+    <link rel = "stylesheet"
+    type = "text/css"
+    href = "calculator.css" />
+    <script type="text/javascript"
+            src="calculator.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- Display Row -->
+        <div class="display" id="answerBox">0</div>
+
+        <!--For each button there will have to be an onclick() call to a javascript function which will update the display and function buttons will feed the variables for the operations  -->
+        <!-- Top row of buttons -->
+        <div class="box" onclick="functionButtonClicked('clear')">C</div>
+        <div class="box" onclick="functionButtonClicked('sign')">+/-</div>
+        <div class="box" onclick="functionButtonClicked('percent')">%</div>
+        <div class="box" onclick="functionButtonClicked('divide')">&divide</div>
+
+        <!-- Second Row of Buttons -->
+        <div class="box" onclick="numberButtonClicked('7')">7</div>
+        <div class="box" onclick="numberButtonClicked('8')">8</div>
+        <div class="box" onclick="numberButtonClicked('9')">9</div>
+        <div class="box" onclick="functionButtonClicked('multiply')">&times</div>
+
+        <!-- Third Row of Buttons -->
+        <div class="box" onclick="numberButtonClicked('4')">4</div>
+        <div class="box" onclick="numberButtonClicked('5')">5</div>
+        <div class="box" onclick="numberButtonClicked('6')">6</div>
+        <div class="box" onclick="functionButtonClicked('minus')">-</div>
+
+        <!--Fourth Row of buttons -->
+        <div class="box" onclick="numberButtonClicked('1')">1</div>
+        <div class="box" onclick="numberButtonClicked('2')">2</div>
+        <div class="box" onclick="numberButtonClicked('3')">3</div>
+        <div class="box" onclick="functionButtonClicked('plus')">+</div>
+
+        <!-- Bottom Row of buttons -->
+        <div class="box zero" onclick="numberButtonClicked('0')">0</div>
+        <div class="box" onclick="numberButtonClicked('.')">.</div>
+        <div class="box" onclick="calculateTotal()">=</div>
+    </div>
+
+</body>

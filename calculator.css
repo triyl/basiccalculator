@@ -1,0 +1,59 @@
+body {
+    margin: 40px;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-gap: 10px;
+    background-color: #fff;
+    color: #444;
+    justify-content:center;
+}
+
+.box{
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+.display{
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 300%;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-align: right;
+}
+
+.console{
+    background-color: black;
+}
+
+.zero{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.box:hover{
+  /*  -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale (1.05);*/
+    background-color: rgb(97, 97, 97)
+}
+/* This bit changes the size of the buttons when clicked
+I haven't figured out how to make it go back to originatl size
+after mouse button is released
+
+.box:active{
+    -webkit-transform: scale(.95);
+    -moz-transform: scale(.95);
+    -ms-transform: scale(.95);
+    transform: scale (.95);
+}*/
